@@ -19,7 +19,7 @@ variables de ambiente que serían de gran utilidad. A decir:
 Es posible definir las siguientes variables:
 
 * **PHP_CLI_DOCKER_IMAGE:** nombre de la imagen docker que provee el comando php. Se
-  recomienda la provista por este repo `chrodriguez/php-5.6-cli:latest`
+  recomienda la provista por este repo `chrodriguez/php-5.6:cli-latest`
 * **PHP_OPTIONS:** se inicializa por defecto en `-d
   'date.timezone=America/Argentina/Buenos_Aires' -d memory_limit=512M`, que son
 argumentos al comando php que se anexan a cada corrida del comando php
@@ -39,7 +39,7 @@ Es posible definir las siguientes variables:
 
 * **PHP_SERVER_DOCKER_IMAGE:** nombre de la imagen docker que provee el servicio
   apache con soporte de php. Se recomienda la provista por este repo:
-`chrodriguez/php-5.6-apache:latest`
+`chrodriguez/php-5.6:apache-latest`
 * **PHP_SERVER_DOCKER_RUN_OPTIONS:** opciones usadas al correr el comando
   docker run, que permiten parametrizar determinadas cuestiones. Por defecto,
 únicamente agrega en el contenedor que corre, un host con la IP del host

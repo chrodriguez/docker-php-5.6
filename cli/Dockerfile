@@ -7,8 +7,10 @@ RUN apk add -U --no-cache autoconf alpine-sdk mariadb-dev \
       libjpeg-turbo-dev \
       libmcrypt-dev \
       libpng-dev
+RUN apk add -U --no-cache pcre-dev
 RUN pecl install apcu-4.0.11
 RUN docker-php-ext-enable apcu
+RUN apk add -U --no-cache cyrus-sasl-dev
 RUN pecl install memcached-2.2.0
 RUN docker-php-ext-enable memcached
 RUN pecl install memcache-2.2.7
